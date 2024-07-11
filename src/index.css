@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  /* background-color: #0c0c1d; */
+  /* color: lightgray; */
+  @apply text-gray-300;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text;
+}
+
+.btn-orange {
+  @apply py-3 px-4 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 hover:text-black font-medium cursor-pointer;
+}
+
+.btn-gray{
+  @apply py-3 px-4 rounded-md border hover:text-orange-500 font-medium cursor-pointer;
+}
+
+.container{
+  width: 100%;
+  height: 700px;
+  
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.slider{
+  width: 350px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(45deg);
+ animation: animate 50s linear infinite;
+}
+
+.slider span{
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center ;
+  box-shadow: 0 0 6px orange;
+  background-color: #020202;
+} 
+
+
+@keyframes animate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
