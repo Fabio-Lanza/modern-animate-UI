@@ -82,21 +82,25 @@ const Workflow = () => {
       </motion.h2>
 
       <div className="flex flex-wrap justify-center">
-
         {/* Left images ==========*/}
-        <div className="flex p w-full lg:w-1/2"
-        >
-          <motion.img src={computer} alt="codea" className="w-[550px] h-[550px]" variants={leftVariants}
-          initial="initial"
-          whileInView="animate"/>
+        <div className="flex p w-full lg:w-1/2">
+          <motion.img
+            src={computer}
+            alt="codea"
+            className="w-[550px] h-[550px]"
+            variants={leftVariants}
+            initial="initial"
+            whileInView="animate"
+          />
 
           <motion.img
             src={computerContent}
             alt="codea"
             className="w-[750px] h-[750px]"
             variants={rightVariants}
-          initial="initial"
-          whileInView="animate"/>
+            initial="initial"
+            whileInView="animate"
+          />
         </div>
 
         <div className="p-12 w-full lg:w-1/2">
