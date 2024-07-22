@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { links } from "../../contants/Constants";
-import { SideProps } from "../../contants/Constants";
+import { SideProps } from "./Sidebar";
 
 const variants = {
   open: {
