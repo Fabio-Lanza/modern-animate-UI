@@ -1,5 +1,4 @@
-import { motion, spring } from "framer-motion";
-//import img from "../../assets/hero.png";
+import { motion } from "framer-motion";
 
 
 const textVariants = {
@@ -20,15 +19,6 @@ const textVariants = {
   },
 };
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-540%",
-    transition: { duration: 20, repeat: Infinity, repeatType: "mirror" },
-  },
-};
 
 const Hero = () => {
   return (
@@ -69,14 +59,15 @@ const Hero = () => {
               Documentation
             </motion.button>
           </motion.div>
-
         </motion.div>
       </div>
       <motion.div
         className="w-[50%] absolute text-[540px] bottom-[-105px] whitespace-nowrap opacity-10"
-        variants={sliderVariants}
         initial="initial"
-        animate="animate"
+        animate={{
+          x: "-540%",
+          transition: { duration: 20, repeat: Infinity, repeatType: "mirror" },
+        }}
       >
         Creativity Design Innovation
       </motion.div>

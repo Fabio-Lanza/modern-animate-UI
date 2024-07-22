@@ -10,7 +10,6 @@ const Parallax = () => {
   });
 
   const textBg = useTransform(scrollYProgress, [0, 1], ["0%", "900%"]);
-  const planetBg = useTransform(scrollYProgress, [0, 1], ["0%", "350%"]);
 
   const card03 = {
     initial: {

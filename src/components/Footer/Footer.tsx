@@ -52,11 +52,11 @@ const leftVariants = {
 
 const Footer = () => {
   return (
-    <footer className=" mt-20 pb-28 border-t py-10 border-neutral-700 ">
-      <div className="max-w-[1366px] m-auto grid grid-cols-2 lg:grid-cols-3 gap-4">
+    <footer className=" mt-20 pb-28 border-t py-10 border-neutral-700">
+      <div className="max-w-[1366px] mx-auto px-20 flex justify-between">
         <div>
           <h3 className="text-xl font-semibold mb-4 gradient-text">Resources</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {resourcesLinks.map((link, index) => (
               <motion.li key={index} variants={leftVariants} initial="initial" whileInView="animate">
                 <a
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-4 gradient-text">Platform</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {platformLinks.map((link, index) => (
               <motion.li key={index} variants={middleVariants} initial="initial" whileInView="animate">
                 <a
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-4 gradient-text">Community</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {communityLinks.map((link, index) => (
               <motion.li key={index} variants={rightVariants} initial="initial" whileInView="animate">
                 <a
