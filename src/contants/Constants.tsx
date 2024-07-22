@@ -4,7 +4,9 @@ import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
-import  heade from "../assets/heade.jpg";
+import heade from "../assets/heade.jpg";
+import debug from "../assets/debug.jpeg";
+import refactoring from "../assets/refactoring.jpg";
 
 export interface TestimonialProps {
   id: number;
@@ -22,36 +24,39 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const links = [
-  { name: "Features", link: "#features" },
+  { name: "Services", link: "#services" },
   { name: "Workflow", link: "#workflow" },
   { name: "Pricing", link: "#pricing" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "Projects", link: "#projects" },
+  { name: "Features", link: "#features" },
 ];
 
 export const projects = [
-  {id: 1,
-    title: "React Commerce",
+  {
+    id: 1,
+    title: "Automated Code Generation",
     img: heade,
-    desc:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    desc: "Utilize AI to automatically generate code snippets and provide intelligent code completion suggestions. This feature can help developers write code faster and with fewer errors by predicting and completing code as they type.",
   },
-  {id: 2,
-    title: "NEXT js Commerce",
+  {
+    id: 2,
+    title: "Intelligent Debugging and Error Fixing",
+    img: debug,
+    desc: "Implement AI-powered tools that analyze code to identify bugs and errors, and provide suggestions or automated fixes. This includes real-time error detection and context-aware debugging tips",
+  },
+  {
+    id: 3,
+    title: "Natural Language Processing for Documentation",
     img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    desc: "Leverage NLP to automatically generate and update documentation based on the codebase. This includes generating comments, API documentation, and user guides from code and commit messages",
   },
-  {id: 1,
-    title: "Vanilla Commerce",
-    img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  {
+    id: 4,
+    title: "Code Refactoring and Optimization",
+    img: refactoring,
+    desc: "Provide AI-driven tools that suggest or automatically apply code refactoring techniques to improve code structure, readability, and performance. This includes identifying redundant code, optimizing loops, and suggesting design pattern improvements.",
   },
-  {id: 1,
-    title: "TypescriptCommerce",
-    img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-]
-
+];
 
 export const testimonials = [
   {
@@ -110,7 +115,6 @@ export const testimonials = [
     image: user2,
     text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
   },
-  
 ];
 
 export const features = [
@@ -181,9 +185,9 @@ export const pricingOptions = [
     price: "$0",
     features: [
       "Private board sharing",
-      "5 Gb Storage",
+      "1 Gb Storage",
       "Web Analytics",
-      "Private Mode",
+      "No Mode",
     ],
   },
   {

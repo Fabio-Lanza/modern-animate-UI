@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 interface SingleProjectProps {
@@ -49,7 +49,7 @@ const SingleProject = ({ item }: SingleProjectProps) => {
 
 
   return (
-    <section className="max-w-[1366px] m-auto z-[-1]" >
+    <div className="max-w-[1366px] m-auto z-[-1] h-screen">
 
       <div className="container w-full h-full flex justify-center items-center gap-12 overflow-hidden">
         <motion.div className="img-container flex-1" variants={leftVariants} initial="initial" whileInView="animate">
@@ -61,7 +61,7 @@ const SingleProject = ({ item }: SingleProjectProps) => {
           <button className="btn-orange w-48">Read More</button>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

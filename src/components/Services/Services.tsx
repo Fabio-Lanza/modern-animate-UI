@@ -55,7 +55,7 @@ const card01 = {
 
 const Services = () => {
   return (
-    <motion.div className="bg-[#020202] h-screen mt-28 flex flex-col justify-between z-[-1]">
+    <motion.div id="services" className="bg-[#020202] h-screen mt-28 flex flex-col justify-between z-[-1]">
       {/* Top part ================================*/}
       <motion.div
         className="self-end flex items-center gap-5 h-[300px]"
@@ -74,16 +74,14 @@ const Services = () => {
         initial="initial"
         whileInView="animate"
       >
-        <div className="flex items-center gap-8 w-[1400px]  ">
+        <div className="flex items-center gap-8 w-[1400px] "> 
           <img
             src={robotic}
             alt=""
             className="w-[500px] h-[500px]"
           />
 
-          {/* <video autoPlay loop muted className="w-96 h-60 rounded-2xl border border-orange-700 shadow-orange-400">
-           <source src={video1} type="video/mp4" />
-         </video> */}
+      
 
           <div className="flex flex-col">
             <h1 className="font-thin text-8xl text-gray-300">
@@ -108,10 +106,7 @@ const Services = () => {
 
       {/* Bottom part ================================*/}
       <div className="flex items-center flex-wrap w-full m-auto max-w-[1366px]">
-        {features.map(
-          (
-            feature: { icon: string; text: string; description: string },
-            index: number
+        {features.map((feature, index
           ) => (
             <motion.div
               key={index}

@@ -1,6 +1,6 @@
 import { motion, spring } from "framer-motion";
 //import img from "../../assets/hero.png";
-import scroll from "../../assets/scroll.png";
+
 
 const textVariants = {
   initial: {

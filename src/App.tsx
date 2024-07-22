@@ -8,10 +8,11 @@ import Workflow from "./components/Workflow/Workflow";
 import Price from "./components/Price/Price";
 import Testimonial from "./components/Testimonial/Testimonial";
 
+
 function App() {
   return (
     <>
-      <section id="features">
+      <section id="home">
         <Navbar />
         <Hero />
       </section>
@@ -36,7 +37,7 @@ function App() {
         <Testimonial />
       </section>
 
-      <section id="projects">
+      <section id="features">
         <Portfolio />
       </section>
     </>
